@@ -1,4 +1,4 @@
-# ng4dev
+# ng4dev-cli
 
 [![Travis CI](https://travis-ci.org/olivier-schmitt/ng4dev.svg?branch=master)](https://travis-ci.org/olivier-schmitt/elkf4dev)
 [![Docker Repository on Quay](https://travis-ci.org/olivier-schmitt/status "Docker Repository on Quay")](https://quay.io/repository/olivier_schmitt/ng4dev-cli)
