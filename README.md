@@ -1,6 +1,6 @@
 # ng4dev-cli
 
-[![Travis CI](https://travis-ci.org/olivier-schmitt/ng4dev.svg?branch=master)](https://travis-ci.org/olivier-schmitt/elkf4dev)
+[![Travis CI](https://travis-ci.org/olivier-schmitt/ngcli-docker.svg?branch=1.4-branch)](https://travis-ci.org/olivier-schmitt/ngcli-docker)
 [![Docker Repository on Quay](https://travis-ci.org/olivier-schmitt/status "Docker Repository on Quay")](https://quay.io/repository/olivier_schmitt/ng4dev-cli)
 
 
@@ -16,12 +16,12 @@ ng4dev-cli's purpose is to provide the developer with a working ngcli, portable 
 
 The following command runs ngcli inside a container:
 ```shell
-docker run --rm -v ${PWD}:/root/ngcli --name ngcli quay.io/olivier_schmitt/ng4dev-cli:latest ng $*
+docker run --rm -v ${PWD}:/root/ngcli --name ngcli quay.io/olivier_schmitt/ng4dev-cli:1.4.5 ng $*
 ``` 
 
 Put it in Shell file named "ngcli" and make it available in your PATH.
 
 The following command runs the NG Live Development Server (default port is 4200, change the port mapping in docker command to fit your needs): 
 ```shell
-docker run --rm -v ${PWD}:/root/ngcli -p 4200:4200 --name ngcli quay.io/olivier_schmitt/ng4dev-cli:latest ng serve --host 0.0.0.0 $*
+docker run --rm -v ${PWD}:/root/ngcli  -p 5858:5858 -p 4200:4200 --name ngcli quay.io/olivier_schmitt/ng4dev-cli:1.4.5 ng serve --host 0.0.0.0 $*
 ``` 
