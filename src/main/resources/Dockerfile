@@ -1,4 +1,4 @@
-FROM node:6.11-alpine as node-angular-cli
+FROM node:6.11-alpine
 
 #LABEL "com.jeecookbook.ng4dev-cli.description"="${project.description}"
 LABEL "com.jeecookbook.ng4dev-cli.version"="latest"
