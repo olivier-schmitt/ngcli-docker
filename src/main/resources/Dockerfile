@@ -3,7 +3,7 @@ FROM node:6.11-alpine
 #LABEL "com.jeecookbook.ng4dev-cli.description"="${project.description}"
 LABEL "com.jeecookbook.ng4dev-cli.version"="latest"
 LABEL "com.jeecookbook.ng4dev-cli.flavor"="Alpine Linux"
-LABEL "authors"="Olivier Schmitt"
+LABEL "authors"="www.olivierschmitt.me"
 
 #Linux setup
 RUN apk update \
